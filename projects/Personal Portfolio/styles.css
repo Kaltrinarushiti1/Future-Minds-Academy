@@ -1,7 +1,11 @@
+* {
+    cursor: url('images/cursor.png'), auto;
+}
+
 body {
     background-size: cover;
     background-image: url(images/img.jpg);
-    cursor: url('images/cursor.png'), auto;
+
 }
 
 ul {
@@ -247,25 +251,15 @@ img {
     border: none;
     border-radius: 5px;
 }
-.input-box{
-    position: relative;
-}
-.input-box input{
-    background: white;
-    border-radius: 40px;
-    border: 1px solid black;
-    outline: none;
-    width: 500px;
-    height: 40px;
-}
 
-.submit-btn{
+.submit-btn {
     width: 150px;
     height: 30px;
     background-color: rgb(156, 156, 231);
     border-radius: 20px;
     border: none;
 }
-.submit-btn:hover{
+
+.submit-btn:hover {
     border: 1px solid black;
 }
