@@ -1,0 +1,12 @@
+p{
+    background-color: rgb(185, 140, 226);
+    padding: 20px;
+    margin: 10px;
+    color: white;
+}
+p:hover{
+    background-color: rgb(94, 101, 176);
+}
+p:hover::first-letter{
+    font-size: 30px;
+}
