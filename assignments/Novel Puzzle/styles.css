@@ -1,0 +1,14 @@
+.first_word {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.first_letter {
+    font-size: 3em;
+    float: left;
+    margin-top: -9px;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
