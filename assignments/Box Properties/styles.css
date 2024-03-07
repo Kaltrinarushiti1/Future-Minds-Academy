@@ -1,0 +1,22 @@
+*{
+    cursor: pointer;
+}
+img{
+    width: 200px;
+    float: left;
+    margin: 4px;
+    border: 1px solid black;
+}
+img:hover{
+    width: 190px;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+}
+p{
+    background-color: rgb(245, 168, 191);
+padding: 20px ;
+margin: 5px;
+border: 2px solid black ;
+}
