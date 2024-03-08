@@ -1,0 +1,35 @@
+body {
+    margin: 0%;
+}
+
+article:nth-child(odd) {
+    background-color: pink;
+    height: 25vh;
+    font-size: 1em;
+    padding: 5px;
+}
+
+article:nth-child(even) {
+    background-color: rgb(216, 122, 138);
+    height: 25vh;
+    font-size: 0.9em;
+    padding: 5px;   
+}
+
+.odd_heading {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+.even_heading {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    font-size: 1.5em;
+    color: white;
+}
+
+hr {
+    width: 33%;
+    border: 1px solid red;
+}
