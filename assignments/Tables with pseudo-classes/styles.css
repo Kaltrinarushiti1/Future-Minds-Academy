@@ -5,7 +5,6 @@ body{
 tr:nth-child(odd){
     background-color: rgb(117, 117, 190);
     color: white;
-    margin-bottom: 5px;
 }
 tr:nth-child(even){
     background-color: rgb(84, 84, 170);
@@ -14,6 +13,10 @@ tr:nth-child(even){
 table{
     border-collapse: collapse;
 }
-table tr{
+tr{
     border-bottom: 2px solid white;
+ 
+}
+th,td{
+    padding: 15px;
 }
