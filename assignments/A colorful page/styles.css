@@ -1,0 +1,30 @@
+body {
+    background-size: cover;
+    background-image: url(img.jpg);
+}
+
+h1 {
+    background-image: linear-gradient(to right, #e5a2e3, #ce47c9);
+    color: #000000;
+    padding: 5px;
+}
+
+li {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    list-style-position: inside;
+    margin-left: -40px;
+}
+
+.paragraph1 {
+    background-image: linear-gradient(to right, #d1829b, #953553);
+    color: white;
+    padding: 15px;
+}
+
+.paragraph2 {
+    background-image: linear-gradient(to right, #c97897, #E0115F);
+    color: white;
+    padding: 15px;
+}
