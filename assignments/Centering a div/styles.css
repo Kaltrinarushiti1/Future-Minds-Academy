@@ -1,0 +1,18 @@
+*{
+    overflow: hidden;
+    margin: 0;
+}
+
+.content {
+    background-color: rgb(81, 88, 180);
+    border: 3px solid black;
+    padding: 2rem;
+}
+
+.container {
+    background-color: rgb(171, 171, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
