@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    height: auto;
+    row-gap: 10rem;
+}
+
+aside {
+    grid-column: 1/2;
+    background-color: rgb(221, 168, 177);
+}
+
+.aside-content {
+    text-align: right;
+    margin-top: 200px;
+    align-items: end;
+}
+
+.aside-1st-paragraph {
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.aside-2nd-paragraph {
+    color: #314d69;
+    margin-top: -30px;
+    font-size: 1.5em;
+    padding-right: 20px;
+}
+
+.posts-articles {
+    grid-column: 2/3;
+    margin: 50px;
+    display: grid;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+img {
+    width: 50px;
+    position: absolute;
+    right: 0;
+    border-radius: 50px;
+}
+
+.grey-text {
+    color: gray;
+}
+
+.blue-text {
+    color: rgb(52, 140, 198);
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+.css-box,
+.html-box,
+.js-box {
+    padding: 2px 5px;
+    color: white;
+}
+
+.css-box {
+    background-color: pink;
+}
+
+.html-box {
+    background-color: rgb(179, 139, 217);
+}
+
+.js-box {
+    background-color: rgb(232, 91, 91);
+}
