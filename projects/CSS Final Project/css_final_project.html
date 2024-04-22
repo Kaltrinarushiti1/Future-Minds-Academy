@@ -13,9 +13,8 @@
 </head>
 
 <body>
-
-    <aside>
-        <div>
+    <aside class="hidden">
+        <div class="aside-div">
             <p>CP<span class="margin-left">COOL PAGE</span> </p>
             <hr>
             <div class="aside-divs not-hover display-flex">
@@ -126,268 +125,279 @@
             </div>
         </div>
     </aside>
-    <header class="display-flex">
+    <header>
         <div class="display-flex">
-            <div>
-                <span class="material-icons icon-box" title="See More">
-                    more_vert
-                </span>
+            <div class="display-flex">
+                <div class=" see-more-icon">
+                    <span class="material-icons icon-box" title="See More">
+                        more_vert
+                    </span>
+                </div>
+                <span class="dash-text">Dashboard</span>
             </div>
-            <span>Dashboard</span>
-        </div>
-        <div class="display-flex">
-            <div>
-                <input type="search" placeholder="Search" id="search">
-                <span class="material-icons icon-box" title="Search">
-                    search
-                </span>
-            </div>
-            <div>
-                <span class="material-icons dashboard-icon" title="Dashboard">
-                    <span>dashboard</span>
-                </span>
-            </div>
+            <div class="display-flex dash">
+                <div>
+                    <input type="search" placeholder="Search" id="search">
+                    <span class="material-icons icon-box" title="Search">
+                        search
+                    </span>
+                </div>
+                <div>
+                    <span class="material-icons dashboard-icon" title="Dashboard">
+                        <span>dashboard</span>
+                    </span>
+                </div>
 
-            <div class="headerIcons">
-                <span class="material-icons notification-icon" title="Notifications">
-                    <span>notifications</span>
-                </span>
-                <div class="notification-number">5</div>
-                <div class="ntfc-ul border-radius">
-                    <ul>
-                        <li class="ntfc-list">John Doe liked your post!</li>
-                        <li class="ntfc-list">Someone viewed your profile!</li>
-                        <li class="ntfc-list">John Doe liked your post!</li>
-                        <li class="ntfc-list">Someone viewed your profile!</li>
-                        <li class="ntfc-list">Another notification</li>
-                    </ul>
+                <div class="headerIcons">
+                    <span class="material-icons notification-icon" title="Notifications">
+                        <span>notifications</span>
+                    </span>
+                    <div class="notification-number">5</div>
+                    <div class="ntfc-ul border-radius">
+                        <ul>
+                            <li class="ntfc-list">John Doe liked your post!</li>
+                            <li class="ntfc-list">Someone viewed your profile!</li>
+                            <li class="ntfc-list">John Doe liked your post!</li>
+                            <li class="ntfc-list">Someone viewed your profile!</li>
+                            <li class="ntfc-list">Another notification</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <span class="material-icons" title="Profile">
+                        <span>person</span>
+                    </span>
                 </div>
             </div>
-            <div>
-                <span class="material-icons" title="Profile">
-                    <span>person</span>
-                </span>
-            </div>
+        </div>
+        <div>
+            <img src="assets/icons/header/menu.svg" alt="" class="menu-icon">
         </div>
     </header>
     <main>
-        <div class="locations">
-            <span>
-                <img src="assets/icons/cards/language.svg" alt="Language Icon" title="Language Icon"
-                    class="language-icon">
-            </span>
-            <div class="locations-content">
-                <div class="location-text">
-                    <p class="Location-heading">Global Sales By Top Locations </p>
-                    <ul>
-                        <li class="location-list display-flex">
-                            <div>
-                                <img src="assets/flags/us.svg" alt="USA Flag" title="USA Flag" class="flag"><span
-                                    class="flag-name">USA</span>
-                            </div>
-                            <div>
-                                <span>2.920 </span><span class="location-percentage">53.23%</span>
-                            </div>
-                        </li>
-                        <li class="location-list display-flex">
-                            <div>
-                                <img src="assets/flags/germany.svg" alt="Germany Flag" title="Germany Flag"
-                                    class="flag"><span class="flag-name">Germany</span>
-                            </div>
-                            <div>
-                                <span>1.300 </span><span class="location-percentage">4.34%</span>
-                            </div>
-                        </li>
-                        <li class="location-list display-flex">
-                            <div>
-                                <img src="assets/flags/albania.svg" alt="Albania Flag" title="Albania Flag"
-                                    class="flag"><span class="flag-name">Albania</span>
-                            </div>
-                            <div>
-                                <span>760 </span><span class="location-percentage">20.43%</span>
-                            </div>
-                        </li>
-                        <li class="location-list display-flex">
-                            <div>
-                                <img src="assets/flags/italy.svg" alt="Italy Flag" title="Italy Flag" class="flag"><span
-                                    class="flag-name">Italy</span>
-                            </div>
-                            <div>
-                                <span>690 </span><span class="location-percentage">7.34%</span>
-                            </div>
-                        </li>
-                        <li class="last-location-list display-flex">
-                            <div>
-                                <img src="assets/flags/kosovo.svg" alt="Kosovo Flag" title="Kosovo Flag"
-                                    class="flag"><span class="flag-name">Kosovo</span>
-                            </div>
-                            <div>
-                                <span>550 </span><span class="location-percentage">26.66%</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47094.337227084114!2d21.421010440066468!3d42.46186414396224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13548d28fe87b91d%3A0xab45b8a9d06a705!2sGjilan!5e0!3m2!1sen!2s!4v1712654404047!5m2!1sen!2s"
-                        width="650" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-        <div class="cards-container">
-            <div class="info-cards first-card border-radius">
-                <div class="cards-top-part">
-                    <div>
-                        <img src="assets/icons/cards/couch.svg" alt="couch" class="cards-icons orange border-radius">
+        <section>
+            <div class="locations">
+                <span>
+                    <img src="assets/icons/cards/language.svg" alt="Language Icon" title="Language Icon"
+                        class="language-icon">
+                </span>
+                <div class="locations-content">
+                    <div class="location-text">
+                        <p class="Location-heading">Global Sales By Top Locations </p>
+                        <ul>
+                            <li class="location-list display-flex">
+                                <div>
+                                    <img src="assets/flags/us.svg" alt="USA Flag" title="USA Flag" class="flag"><span
+                                        class="flag-name">USA</span>
+                                </div>
+                                <div>
+                                    <span>2.920 </span><span class="location-percentage">53.23%</span>
+                                </div>
+                            </li>
+                            <li class="location-list display-flex">
+                                <div>
+                                    <img src="assets/flags/germany.svg" alt="Germany Flag" title="Germany Flag"
+                                        class="flag"><span class="flag-name">Germany</span>
+                                </div>
+                                <div>
+                                    <span>1.300 </span><span class="location-percentage">4.34%</span>
+                                </div>
+                            </li>
+                            <li class="location-list display-flex">
+                                <div>
+                                    <img src="assets/flags/albania.svg" alt="Albania Flag" title="Albania Flag"
+                                        class="flag"><span class="flag-name">Albania</span>
+                                </div>
+                                <div>
+                                    <span>760 </span><span class="location-percentage">20.43%</span>
+                                </div>
+                            </li>
+                            <li class="location-list display-flex">
+                                <div>
+                                    <img src="assets/flags/italy.svg" alt="Italy Flag" title="Italy Flag"
+                                        class="flag"><span class="flag-name">Italy</span>
+                                </div>
+                                <div>
+                                    <span>690 </span><span class="location-percentage">7.34%</span>
+                                </div>
+                            </li>
+                            <li class="last-location-list display-flex">
+                                <div>
+                                    <img src="assets/flags/kosovo.svg" alt="Kosovo Flag" title="Kosovo Flag"
+                                        class="flag"><span class="flag-name">Kosovo</span>
+                                </div>
+                                <div>
+                                    <span>550 </span><span class="location-percentage">26.66%</span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="cards-text">
-                        <span class="grey">Bookings</span>
-                        <span class="card-numbers">184</span>
-                    </div>
-                </div>
-                <hr>
-                <div class="cards-bottom-part grey">
-                    <img src="assets/icons/cards/warning.svg" alt="warning">
-                    <span>Get more space</span>
-                </div>
-            </div>
-            <div class="info-cards second-card  border-radius">
-                <div class="cards-top-part">
-                    <div>
-                        <img src="assets/icons/cards/storefront.svg" alt="storefront"
-                            class="cards-icons green border-radius">
-                    </div>
-                    <div class="cards-text">
-                        <span class="grey">Revenue</span>
-                        <span class="card-numbers">$34,245</span>
-                    </div>
-                </div>
-                <hr>
-                <div class="cards-bottom-part grey">
-                    <img src="assets/icons/cards/calendar.svg" alt="calendar">
-                    <span>Last 24 hours</span>
-                </div>
-            </div>
-            <div class="info-cards third-card border-radius">
-                <div class="cards-top-part">
-                    <div>
-                        <img src="assets/icons/cards/equalizer.svg" alt="storefront"
-                            class="cards-icons pink border-radius">
-                    </div>
-                    <div class="cards-text">
-                        <span class="grey">Website Visits</span>
-                        <span class="card-numbers">75.342</span>
-                    </div>
-                </div>
-                <hr>
-                <div class="cards-bottom-part grey">
-                    <img src="assets/icons/cards/tracked.svg" alt="tracked">
-                    <span>Tracked from Google Analytics</span>
-                </div>
-            </div>
-            <div class="info-cards fourth-card border-radius">
-                <div class="cards-top-part">
-                    <div>
-                        <img src="assets/icons/cards/public.svg" alt="storefront"
-                            class="cards-icons blue border-radius">
-                    </div>
-                    <div class="cards-text">
-                        <span class="grey">Followers</span>
-                        <span class="card-numbers">+245</span>
-                    </div>
-                </div>
-                <hr>
-                <div class="cards-bottom-part grey">
-                    <img src="assets/icons/cards/update.svg" alt="calendar">
-                    <span>Just Updated</span>
-                </div>
-            </div>
-        </div>
-
-        <p class="manage-listings">Manage Listings</p>
-        <div class="apartments-container">
-            <div class="Apartment-box">
-                <div class="imgtransition">
-                    <figure>
-                        <img src="assets/images/card-1.jpeg" alt="Appartment" class="Apartments-figure">
-                    </figure>
-                    <div class="under-img-icons">
-                        <img src="assets/icons/cards/view.svg" alt="View icon" title="View">
-                        <img src="assets/icons/cards/edit.svg" alt="Edit icon" title="Edit">
-                        <img src="assets/icons/cards/delete.svg" alt="Delete icon" title="Delete">
-                    </div>
-                </div>
-                <h3>Cozy 5 Star Aparment</h3>
-                <p class="apartments-info-text grey">Lorem ipsum dolor, sit amet consectetur <br>adipisicing
-                    elit. Soluta
-                    minus illum unde cum eum
-                    illo
-                    voluptatem, ut numquam, error officia sunt repellendus cupiditate.
-                </p>
-                <hr class="card-hr">
-                <div class="apartments-under-hr-text display-flex">
-                    <span>$899/night</span>
-                    <div class="location">
-                        <img src="assets/icons/cards/location.svg" alt="Location" class="location-icon">
-                        <span class="grey">Barcelona,Spain</span>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47094.337227084114!2d21.421010440066468!3d42.46186414396224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13548d28fe87b91d%3A0xab45b8a9d06a705!2sGjilan!5e0!3m2!1sen!2s!4v1712654404047!5m2!1sen!2s"
+                            width="650" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="mapp"></iframe>
                     </div>
                 </div>
             </div>
-            <div class="Apartment-box">
-                <div class="imgtransition">
-                    <figure>
-                        <img src="assets/images/card-2.jpeg" alt="Office Studio" class="Apartments-figure">
-                    </figure>
-                    <div class="under-img-icons">
-                        <img src="assets/icons/cards/view.svg" alt="View icon" title="View">
-                        <img src="assets/icons/cards/edit.svg" alt="Edit icon" title="Edit">
-                        <img src="assets/icons/cards/delete.svg" alt="Delete icon" title="Delete">
+        </section>
+        <section>
+            <div class="cards-container">
+                <div class="info-cards first-card border-radius">
+                    <div class="cards-top-part">
+                        <div>
+                            <img src="assets/icons/cards/couch.svg" alt="couch"
+                                class="cards-icons orange border-radius">
+                        </div>
+                        <div class="cards-text">
+                            <span class="grey">Bookings</span>
+                            <span class="card-numbers">184</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="cards-bottom-part grey">
+                        <img src="assets/icons/cards/warning.svg" alt="warning">
+                        <span>Get more space</span>
                     </div>
                 </div>
-                <h3>Office Studio</h3>
-                <p class="apartments-info-text grey">Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.<br>
-                    Soluta
-                    minus illum unde cum eum ill voluptatem, ut numquam.
-                </p>
-                <hr class="card-hr">
-                <div class="apartments-under-hr-text display-flex">
-                    <span>$1.119/night</span>
-                    <div class="location">
-                        <img src="assets/icons/cards/location.svg" alt="Location" class="location-icon">
-                        <span class="grey">London,UK</span>
+                <div class="info-cards second-card  border-radius">
+                    <div class="cards-top-part">
+                        <div>
+                            <img src="assets/icons/cards/storefront.svg" alt="storefront"
+                                class="cards-icons green border-radius">
+                        </div>
+                        <div class="cards-text">
+                            <span class="grey">Revenue</span>
+                            <span class="card-numbers">$34,245</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="cards-bottom-part grey">
+                        <img src="assets/icons/cards/calendar.svg" alt="calendar">
+                        <span>Last 24 hours</span>
+                    </div>
+                </div>
+                <div class="info-cards third-card border-radius">
+                    <div class="cards-top-part">
+                        <div>
+                            <img src="assets/icons/cards/equalizer.svg" alt="storefront"
+                                class="cards-icons pink border-radius">
+                        </div>
+                        <div class="cards-text">
+                            <span class="grey">Website Visits</span>
+                            <span class="card-numbers">75.342</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="cards-bottom-part grey">
+                        <img src="assets/icons/cards/tracked.svg" alt="tracked">
+                        <span>Tracked from Google Analytics</span>
+                    </div>
+                </div>
+                <div class="info-cards fourth-card border-radius">
+                    <div class="cards-top-part">
+                        <div>
+                            <img src="assets/icons/cards/public.svg" alt="storefront"
+                                class="cards-icons blue border-radius">
+                        </div>
+                        <div class="cards-text">
+                            <span class="grey">Followers</span>
+                            <span class="card-numbers">+245</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="cards-bottom-part grey">
+                        <img src="assets/icons/cards/update.svg" alt="calendar">
+                        <span>Just Updated</span>
                     </div>
                 </div>
             </div>
-            <div class="Apartment-box">
-                <div class="imgtransition">
-                    <figure>
-                        <img src="assets/images/card-3.jpeg" alt="Beautiful Castle" class="Apartments-figure">
-                    </figure>
-                    <div class="under-img-icons">
-                        <img src="assets/icons/cards/view.svg" alt="View icon" title="View">
-                        <img src="assets/icons/cards/edit.svg" alt="Edit icon" title="Edit">
-                        <img src="assets/icons/cards/delete.svg" alt="Delete icon" title="Delete">
+        </section>
+        <section>
+            <p class="manage-listings">Manage Listings</p>
+            <div class="apartments-container">
+                <div class="Apartment-box">
+                    <div class="imgtransition">
+                        <figure>
+                            <img src="assets/images/card-1.jpeg" alt="Mountain Villa" class="Apartments-figure">
+                        </figure>
+                        <div class="under-img-icons">
+                            <img src="assets/icons/cards/view.svg" alt="View icon" title="View">
+                            <img src="assets/icons/cards/edit.svg" alt="Edit icon" title="Edit">
+                            <img src="assets/icons/cards/delete.svg" alt="Delete icon" title="Delete">
+                        </div>
+                    </div>
+                    <h3>Cozy 5 Star Aparment</h3>
+                    <p class="apartments-info-text grey">Lorem ipsum dolor, sit amet consectetur <br>adipisicing
+                        elit. Soluta
+                        minus illum unde cum eum
+                        illo
+                        voluptatem, ut numquam, error officia sunt repellendus cupiditate.
+                    </p>
+                    <hr class="card-hr">
+                    <div class="apartments-under-hr-text display-flex">
+                        <span>$899/night</span>
+                        <div class="location">
+                            <img src="assets/icons/cards/location.svg" alt="Location" class="location-icon">
+                            <span class="grey">Barcelona,Spain</span>
+                        </div>
                     </div>
                 </div>
-                <h3>Beautiful Castle</h3>
-                <p class="apartments-info-text grey">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    <br>
-                    Soluta
-                    minus illum unde cum eum voluptatem, ut numquam, error officia.
-                </p>
-                <hr class="card-hr">
-                <div class="apartments-under-hr-text  display-flex">
-                    <span>$459/night</span>
-                    <div class="location">
-                        <img src="assets/icons/cards/location.svg" alt="Location" class="location-icon">
-                        <span class="grey">Milan,Italy</span>
+                <div class="Apartment-box">
+                    <div class="imgtransition">
+                        <figure>
+                            <img src="assets/images/card-2.jpeg" alt="Office Studio" class="Apartments-figure">
+                        </figure>
+                        <div class="under-img-icons">
+                            <img src="assets/icons/cards/view.svg" alt="View icon" title="View">
+                            <img src="assets/icons/cards/edit.svg" alt="Edit icon" title="Edit">
+                            <img src="assets/icons/cards/delete.svg" alt="Delete icon" title="Delete">
+                        </div>
+                    </div>
+                    <h3>Office Studio</h3>
+                    <p class="apartments-info-text grey">Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit.<br>
+                        Soluta
+                        minus illum unde cum eum ill voluptatem, ut numquam.
+                    </p>
+                    <hr class="card-hr">
+                    <div class="apartments-under-hr-text display-flex">
+                        <span>$1.119/night</span>
+                        <div class="location">
+                            <img src="assets/icons/cards/location.svg" alt="Location" class="location-icon">
+                            <span class="grey">London,UK</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="Apartment-box">
+                    <div class="imgtransition">
+                        <figure>
+                            <img src="assets/images/card-3.jpeg" alt="Beautiful Castle" class="Apartments-figure">
+                        </figure>
+                        <div class="under-img-icons">
+                            <img src="assets/icons/cards/view.svg" alt="View icon" title="View">
+                            <img src="assets/icons/cards/edit.svg" alt="Edit icon" title="Edit">
+                            <img src="assets/icons/cards/delete.svg" alt="Delete icon" title="Delete">
+                        </div>
+                    </div>
+                    <h3>Beautiful Castle</h3>
+                    <p class="apartments-info-text grey">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        <br>
+                        Soluta
+                        minus illum unde cum eum voluptatem, ut numquam, error officia.
+                    </p>
+                    <hr class="card-hr">
+                    <div class="apartments-under-hr-text  display-flex">
+                        <span>$459/night</span>
+                        <div class="location">
+                            <img src="assets/icons/cards/location.svg" alt="Location" class="location-icon">
+                            <span class="grey">Milan,Italy</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <hr class="last-card-hr">
+            <hr class="last-card-hr">
+        </section>
     </main>
     <footer class="display-flex">
         <div class="footer-nav">
