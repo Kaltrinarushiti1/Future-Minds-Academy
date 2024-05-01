@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+img:hover{
+    cursor: pointer;
+}
+/* Gobal */
+
+.display-flex{
+    display: flex;
+}
+.margin-left{
+    margin-left: 1.5rem;
+}
+.margin-right{
+    margin-right: 1.5rem;
+}
+.margin-bottom{
+    margin-bottom: 2rem;
+}
+.margin-top{
+    margin-top: 5rem;
+}
+.margin-top2{
+    margin-top: 2rem;
+}
+.height-100{
+    height: 100%;
+}
+.bold{
+    font-weight: bold;
+}
+.grey{
+    color: grey;
+}
+.padding{
+    padding:  1rem 1.5rem;
+}
+.shadows-into-light-regular {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+height: 100%;
+width: 100%;
+}
+:root{
+    --img: url(assets/img/images/card1.jpg)
+}
+
+/* Header*/
+
+header{
+    font-family: 'Montserrat',sans-serif;
+    grid-row: 1/2;
+    font-size: 1.2rem;
+}
+
+div img{
+    position: relative;
+}
+
+.shopping-bag-icon span{
+    font-size: 11px;
+    font-weight: bold;
+    position: absolute;
+    background-color:#7CB9E8;
+    border-radius:  50%;
+    padding:.1rem .3rem ;
+    margin-top: 13px;
+   margin-left: -28px;
+}
+
+.menu-nav ul{
+   list-style-type: none;
+background-color: rgba(188, 177, 177, 0.5);
+height: 100%;
+width: 300px;
+top: 0;
+display: none;
+margin-top: -.5rem
+}
+
+/* Main */
+main{
+    grid-row: 2/3;
+    font-family: 'Montserrat',sans-serif;
+}
+.home-img-container{
+    position: relative;
+}
+.lr{
+   display: flex;
+   justify-content: center;
+   font-size: 2rem;
+}
+
+ 
+/* second section*/
+
+.second-section img{
+width: 32rem;
+}
+.second-img{
+    text-align: center;
+}
+.first-img , .second-img{
+    position: relative;
+    display: inline-block;
+}
+.first-img img,.second-img img{
+    position: relative;
+    z-index: -1;
+}
+.hover-text{
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    top: 0;
+    position: absolute;
+    display: none;
+}
+.first-img:before,
+.second-img:before{
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width:100%;
+    height:100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    transition: .3s ease;
+}
+
+.first-img:hover:before,
+.second-img:hover:before{
+    border: 2px solid black;
+top: -2px;
+left: -.5px;
+background-color: rgba(244, 240, 240, 0.7);
+}
+
+.first-img:hover .hover-text,
+.second-img:hover .hover-text{
+  display: block;
+}
+
+/* Fragrance Types Section */
+
+.fragrance-icons-container{
+    justify-content: space-around;
+}
+.fragrance-icons{
+width: 9rem;
+}
+.fragrance-heading{
+    font-size: 1.5em;
+}
+
+/* Video Section */
+.video-container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    height:100vh ;
+    width: 100%;
+    column-gap: 2rem;
+}
+.video,.ifr{
+    width: 35rem;
+    height: 20rem;
+}
+.ifr{
+    width: 100%;
+    height: 100%;
+}
+.video-container h2{
+    font-size: 2em;
+}
+.video-text{
+    font-size: 2em;
+    color:#0e747a;
+}
+.video-p{
+line-height: 2em;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin:-25rem 3rem 0 3rem ;
+}
+.btn{
+    border: 1px solid black;
+    background-color: aliceblue;
+    padding: 5px;
+}
+.pod{
+    position: relative;
+}
+.first-prf{
+    position: absolute;
+    margin-left: 20rem;
+    display: none;
+}
+.buttons:hover .first-prf{
+display: block;
+}
+/*Slider container*/
+.sliders-container{
+    height: 60vh;
+    
+}
+
+.sliders-container .slider{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.slides img{
+    width: 10rem;
+    
+}
+.slides:hover img{
+    animation: myAnim 1s ease normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.5);
+	}
+}
+
+/* Scroll effect */
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+/* Overlapping */
+.overlapping{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlapping img{
+    width: 450px;
+    border-radius: 10px;
+}
+.zara-perfume{
+    position: relative;
+    margin-right: 25rem;
+    border-radius: 10px;
+}
+.seaview{
+    margin-top: 20rem;
+    margin-left: 25rem;
+    position: absolute;
+    border-radius: 10px;
+}
