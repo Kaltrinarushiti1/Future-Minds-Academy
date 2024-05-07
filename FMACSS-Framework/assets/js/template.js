@@ -5,7 +5,7 @@ function changeImageRight() {
 
 function changeImageLeft() {
     var img = document.getElementById('imagee');
-    img.src = 'assets/img/images/home-img.jpg';
+    img.src = 'assets/img/images/home.jpg';
 }
 
 window.addEventListener('scroll',reveal);

@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header class="just-between align-center p-4 display-flex height-100">
+    <header class="just-between align-center p-2 display-flex height-100">
         <div class="bold">TRINFUME</div>
         <div class="m-3 display-flex">
             <div class="shopping-bag-icon">
@@ -57,17 +57,17 @@
         </div>
     </header>
     <main>
-        <section class="">
-            <div class="ii">
-                <div class="home-img-container">
-                    <img src="assets/img/images/home-img.jpg" alt="" class="img-xxl" id="imagee">
+        <section>
+            <div class="home-img-container">
+                <div class="first-landing-img">
+                    <img src="assets/img/images/home.jpg" alt="" class="img-xxl" id="imagee">
                 </div>
-                <div class="lr">
+                
+            </div><div class="lr">
                     <div onclick="changeImageLeft()" class="q"><img src="assets/img/icons/arrow-left.svg" alt=""></div>
                     <div onclick="changeImageRight()" class="q"><img src="assets/img/icons/arrow-right.svg" alt="">
                     </div>
                 </div>
-            </div>
         </section>
 
         <section class="second-section p-5 display-flex just-between row-phone shadows-into-light-regular  reveal">
@@ -124,7 +124,7 @@
                 </div>
             </div>
         </section>
-        <section class="video-container margin-top p-5 reveal">
+        <section class="video-container margin-top p-5 reveal row-tablet margin-bottom">
             <div>
                 <span class="video-text shadows-into-light-regular">About Trinfume</span>
                 <h2 class="margin-bottom margin-top2">THE PERFECT SCENT</h2>
@@ -132,39 +132,86 @@
                     sophistication, evoking memories and igniting emotions with every delicate trace.An aromatic
                     symphony, this fragrant concoction dances on the skin, weaving a tapestry of sensory delights that
                     tantalize the senses and evoke timeless elegance</p>
-                
             </div>
             <div class="video margin-top">
                 <iframe src="assets/videos/video.mp4" frameborder="0" class="ifr"></iframe>
             </div>
         </section>
         <section>
-            <div class="sliders-container reveal margin-top2">
-                <div class="slider">
-                    <div class="slides">
-                        <img src="assets/img/images/card1.jpg" alt="">
+            <div class="sliders-container reveal margin-top">
+                <div class="slider row-tablet just-tablet-between">
+                    <div class="slides first-slide">
+                        <img src="assets/img/images/card1.jpg" alt="" class="slides-img">
                     </div>
-                    <div class="slides">
-                        <img src="assets/img/images/card2.jpg" alt="">
+                    <div class="slides second-slide">
+                        <img src="assets/img/images/card2.jpg" alt="" class="slides-img">
                     </div>
-                    <div class="slides">
-                        <img src="assets/img/images/card3.jpg" alt="" >
+                    <div class="slides third-slide">
+                        <img src="assets/img/images/card3.jpg" alt="" class="slides-img">
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <div class="overlapping reveal">
-                
+            <div class="overlapping reveal ">
                 <div class="zara-perfume">
                     <img src="assets/img/images/overlapping1.jpg" alt="">
+                    <div>
+                        <a href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Shop Now
+                        </a>
+                    </div>
                 </div>
                 <div class="seaview">
+                    <div>
+                        <a href="#" class="second-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Shop Now
+                        </a>
+                    </div>
                     <img src="assets/img/images/overlapping2.jpg" alt="">
                 </div>
             </div>
         </section>
     </main>
+    <footer class="margin-top ">
+        <div class="footer-div ">
+            <div class="display-flex just-between p-5 align-center">
+                <div class=" ">
+                    <div class="footer-info">
+                        <div> <img src="assets/img/icons/location-icon.svg" alt="" class="footer-icons"></div>
+                        <div>58 White St., New York</div>
+                    </div>
+                    <div class="footer-info">
+                        <div><img src="assets/img/icons/envelope.svg" alt="" class="footer-icons"></div>
+                        <div>trinfume_info@gmail.com</div>
+                    </div>
+                    <div class="footer-info ">
+                        <div><img src="assets/img/icons/telephone.svg" alt="" class="footer-icons"></div>
+                        <div>+1 (800) 987 456 98</div>
+                    </div>
+                </div>
+                <div class="footer-input ">
+                    <input type="search" placeholder="Enter Your Email">
+                    <div class="send">
+                        <p>Send</p></div>
+                </div>
+            </div>
+            <hr class="">
+            <div class="p-5">
+                <div>&copy; 2024 Trinfume</div>
+                <div></div>
+            </div>
+
+        </div>
+    </footer>
 </body>
 
 </html>
