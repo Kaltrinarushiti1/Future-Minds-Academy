@@ -570,11 +570,7 @@ input[type="search"]:focus {
 
 
 @media(max-width: 768px) {
-    .second-second {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-    }
+    
     .slider .slides{
         width: 100%;
         display: flex;
@@ -584,6 +580,20 @@ input[type="search"]:focus {
     .slides img{
         width: 30rem;
     }
+    .video-container{
+        margin-top: 7rem;
+        
+    }
+    .video{
+        margin-top: 0;
+        margin-bottom: 5rem;
+        width: 35rem;
+        margin-left: 7rem;
+    }
+    
+    .sliders-container{
+        margin-top: 8rem;
+    }
     .first-slide:before,
 .second-slide::before,
 .third-slide::before {
@@ -592,5 +602,28 @@ input[type="search"]:focus {
     margin-left:2px;
     margin-top: -4.7rem;
   
+}
+.second-section{
+    text-align: center;
+    margin-top: 3rem;
+}
+.second-section .second-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.first-img{
+    margin-bottom: 3rem;
+}
+.second-img{
+    margin-left: 2.5rem;
+}
+.first-img:before,
+.second-img:before {
+   margin-left: 7.4rem;
+    width: 32rem;
+    height: 99%;
+}
+.second-img:before{
+    margin-left: 6.2rem;
 }
 }
