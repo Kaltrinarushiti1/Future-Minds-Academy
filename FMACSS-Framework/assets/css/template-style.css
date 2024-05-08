@@ -626,4 +626,13 @@ input[type="search"]:focus {
 .second-img:before{
     margin-left: 6.2rem;
 }
+.overlapping{
+  flex-direction: column;
+
+
+}
+.overlapping .zara-perfume img{
+align-items: center;
+}
+
 }
