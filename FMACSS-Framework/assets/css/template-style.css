@@ -92,12 +92,14 @@ div img {
 
 .menu-nav ul {
     list-style-type: none;
-    background-color: rgba(188, 177, 177, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     height: 100%;
     width: 300px;
     top: 0;
+    position: absolute;
+    z-index: 999;
+    margin-left: -17.3rem;
     display: none;
-    margin-top: -.5rem
 }
 
 /* Main */
@@ -113,6 +115,7 @@ main {
 }
 
 
+
 /* second section*/
 
 .second-section {
@@ -126,6 +129,9 @@ main {
 
 .second-img {
     text-align: center;
+}
+.hover-text br{
+display: none;
 }
 
 .first-img,
@@ -179,6 +185,22 @@ main {
 
 .fragrance-icons-container {
     justify-content: space-around;
+}
+
+.fragrance-icons-container div {
+    width: auto;
+}
+
+.fragrance-icons-container div:hover {
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 35px;
+    border-radius: 50%;
+
+}
+
+.fragrance-icons-container h2 {
+    margin-left: 2rem;
 }
 
 .fragrance-icons {
@@ -570,69 +592,81 @@ input[type="search"]:focus {
 
 
 @media(max-width: 768px) {
-    
-    .slider .slides{
+    .hover-text br{
+        display: block;
+       
+    }
+    .hover-text{
+        margin-left: 7rem;
+    }
+    .second-img .hover-text{
+        margin-left: 8rem;
+    }
+    .slider .slides {
         width: 100%;
         display: flex;
         justify-content: center;
         margin-bottom: 15rem;
     }
-    .slides img{
+
+    .slides img {
         width: 30rem;
     }
-    .video-container{
+
+    .video-container {
         margin-top: 7rem;
-        
+
     }
-    .video{
+
+    .video {
         margin-top: 0;
         margin-bottom: 5rem;
         width: 35rem;
         margin-left: 6.8rem;
     }
-    
-    .sliders-container{
+
+    .sliders-container {
         margin-top: 8rem;
     }
+
     .first-slide:before,
-.second-slide::before,
-.third-slide::before {
-    width: 36.5rem;
-    height: 54.4rem;
-    margin-left:2px;
-    margin-top: -4.7rem;
-  
-}
-.second-section{
-    text-align: center;
-    margin-top: 3rem;
-}
-.second-section .second-section{
-    display: flex;
-    flex-wrap: wrap;
-}
-.first-img{
-    margin-bottom: 3rem;
-}
-.second-img{
-    margin-left: 2.5rem;
-}
-.first-img:before,
-.second-img:before {
-   margin-left: 7.4rem;
-    width: 32rem;
-    height: 99%;
-}
-.second-img:before{
-    margin-left: 6.2rem;
-}
-.overlapping{
-  flex-direction: column;
+    .second-slide::before,
+    .third-slide::before {
+        width: 36.5rem;
+        height: 54.4rem;
+        margin-left: 2px;
+        margin-top: -4.7rem;
 
+    }
 
-}
-.overlapping .zara-perfume img{
-align-items: center;
-}
+    .second-section {
+        text-align: center;
+        margin-top: 3rem;
+    }
 
-}
+    .second-section .second-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .first-img {
+        margin-bottom: 3rem;
+    }
+
+    .second-img {
+        margin-left: 2.5rem;
+    }
+
+    .first-img:before,
+    .second-img:before {
+        margin-left: 7.4rem;
+        width: 32rem;
+        height: 99%;
+    }
+
+    .second-img:before {
+        margin-left: 6.2rem;
+    }
+
+    
+    }
