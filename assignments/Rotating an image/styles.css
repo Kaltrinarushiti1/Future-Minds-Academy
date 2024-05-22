@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+}
+
+.rotate {
+    filter: blur(5px);
+    transition-duration: 1s;
+    width: 20rem;
+
+}
+
+.rotate:hover {
+    transform: rotate(720deg);
+    filter: blur(0);
+}
