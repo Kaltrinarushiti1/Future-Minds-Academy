@@ -1,0 +1,98 @@
+/* BODY */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* GLOBAL CSS */
+
+.background-gray {
+    background-color: gray;
+}
+
+.background-blue {
+    background-color: rgb(27, 156, 206);
+}
+
+.dFlex {
+    display: flex;
+}
+
+.justifycontentcenter {
+    justify-content: center;
+}
+
+.alignitemscenter {
+    align-items: center;
+}
+
+.padding20 {
+    padding: 20px;
+}
+
+.textwhite {
+    color: white;
+}
+
+.positionrelative {
+    position: relative;
+}
+
+.positionabsolute {
+    position: absolute;
+}
+
+.fontsize30px {
+    font-size: 10px;
+}
+.space-between{
+    justify-content: space-between;
+}
+
+/* MAIN */
+
+label {
+    visibility: hidden;
+}
+
+input:focus+label {
+    color: white;
+    visibility: visible;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(720deg);
+    }
+}
+
+.figureimg {
+    display: inline;
+    width: 30px;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration:  2s;
+}
+
+.labelinput1,
+.labelinput2,
+.labelinput3 {
+    top: 25px;
+   left: 0;
+}
+
+.labelinput2,.labelinput3  {
+    font-size: 10px;
+}
+.btn{
+padding-left: 10px;
+padding-right: 10px;
+background-color: rgb(70, 131, 216);
+display: flex;
+align-items: center;
+border-radius: 5px;
+color: white;
+}
+.btn:hover{
+    background-color: rgb(16, 87, 186);
+}
