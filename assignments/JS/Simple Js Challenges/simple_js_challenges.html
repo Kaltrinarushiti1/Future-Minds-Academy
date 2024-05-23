@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Js Challenges</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Challenge 1</h1>
+        <h3>Kilometer to Mile Converter</h3>
+        <input type="number" number="" step="any" id="data"> km <br><br>
+        <button onclick="convert()">Convert</button>
+        <h3 id="miles"></h3> <br><br>
+    </section>
+    <section>
+        <h1>Challenge 2</h1>
+        <h3>Radius to Circle Area</h3>
+        <input type="number" id="rad"> radius <br><br>
+        <button onclick="area()">Show the Area</button>
+        <h3 id="calcArea"></h3>
+    </section>
+    <section>
+        <h1>Challenge 3</h1>
+        <h3>Euro to Dollars</h3>
+        <input type="number" id="euro"> € <br><br>
+        <button onclick="convertEu()">Convert</button>
+        <h3 id="calcEu"></h3>
+    </section>
+
+
+    <script>
+        function convert() {
+            let kmNr = document.getElementById("data").value;
+            const kms = 0.621371;
+            let miles = kmNr * kms;
+            miles = Math.round(miles);
+            document.getElementById("miles").innerText = `${miles} miles `
+        }
+
+        function area() {
+            let radius = document.getElementById("rad").value;
+            const pi = 3.14;
+            let circleArea = pi * radius * radius;
+            circleArea = Math.round(circleArea * 100) / 100;
+            document.getElementById("calcArea").innerText = `${circleArea} area of circle`
+        }
+        
+        function convertEu() {
+            let euro = document.getElementById("euro").value;
+            const dollar = 1.08;
+            let calcDollar = euro * dollar;
+            document.getElementById("calcEu").innerText = `${calcDollar} $`
+        }
+    </script>
+</body>
+
+</html>
