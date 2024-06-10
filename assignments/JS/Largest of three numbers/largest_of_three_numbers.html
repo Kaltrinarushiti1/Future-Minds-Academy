@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest of three numbers</title>
+</head>
+<body>
+    <main>
+        <h2>Which number is the largest</h2>
+        1. <input type="number" id="firstNum" ><br><br>
+        2. <input type="number" id="secondNum"><br><br>
+        3. <input type="number" id="thirdNum">
+        <button onclick="check()">Check</button>
+        <h2 id="result"></h2>
+    </main>
+    <script>
+        function check(){
+            let a = document.getElementById('firstNum').value;
+            let b = document.getElementById('secondNum').value;
+            let c = document.getElementById('thirdNum').value;
+
+            const result = document.querySelector('result');
+            if((a > b) && (a > c)){
+                document.getElementById('result').innerText=`${a} is the largest number`
+            }
+            
+        
+            
+            if((b > a) && (b > c)){
+                document.getElementById('result').innerText=`${b} is the largest number`
+            }
+            
+            
+            if((c > a) && (c > b )){
+                document.getElementById('result').innerText=`${c} is the largest number`
+            }
+
+    
+
+            if ((a === c) &&  (c === b)){
+                document.getElementById('result').innerText=`All numbers are the same number`
+            }
+
+        }
+
+    </script>
+</body>
+</html>
