@@ -15,18 +15,19 @@
 
         let vowels = 'aeiouy';
         let number = '0123456789';
-        let symbol = '.,;:"+=_-!@#$%^&()[]{}'
+        let symbol = '.,;:"+=_-!@#$%^&()[]{}';
         
 
-        userInput = userInput.toLowerCase();
+        
 
         if (number.includes(userInput)) {
             console.log('You have typed a number!')
         }
-        if(symbol.includes(userInput)){
+         else if(symbol.includes(userInput)){
             console.log('You have typed a symbol!')
         }
-        
+        else{
+             userInput = userInput.toLowerCase();
 
         if (userInput.length !== 1) {
             console.log('Please write only one letter');
@@ -39,6 +40,8 @@
                 console.log('The letter you typed is NOT a vowel!');
             }
         }
+        }
+       
     </script>
 </body>
 
