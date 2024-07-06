@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of numbers</title>
+</head>
+
+<body>
+    <script>
+
+        let sum = 0;
+        let number;
+
+        while (true) {
+            number = parseInt(prompt('Write a positive number or "0" to stop:'));
+
+            if(isNaN(number) || number < 0){
+                alert('Please enter a valid number')
+                continue;
+            }
+            if (number == 0) {
+                break;
+            }
+            sum += number;
+        }
+        console.log(sum);
+    </script>
+</body>
+
+</html>
