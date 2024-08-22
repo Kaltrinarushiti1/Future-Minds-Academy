@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess until correct</title>
+</head>
+
+<body>
+    <script>
+
+        let ranNum = Math.floor(Math.random() * 6) + 1;
+        let userInput;
+        let attempts = 0;
+        console.log(ranNum);
+
+        do {
+            userInput = parseInt(prompt('Pick a number between 1 and 6'));
+            attempts++;
+
+            if (userInput > 6 || userInput < 1 || isNaN(userInput)) {
+                alert("Please enter a valid number 1 through 6");
+                attempts--;
+                continue;
+
+            }
+            if (userInput > ranNum || userInput < ranNum) {
+                alert("Incorrect, guess again!");
+
+            }
+            else {
+                const tryTries = attempts === 1 ? 'try' : 'tries';
+                alert(`Congratulations, you guessed the correct number in ${attempts} ${tryTries}`);
+            }
+        }
+        while (userInput !== ranNum);
+
+    </script>
+</body>
+
+</html>
