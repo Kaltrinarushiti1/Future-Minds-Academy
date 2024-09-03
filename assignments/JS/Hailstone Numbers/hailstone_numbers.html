@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hailstone Numbers</title>
+</head>
+
+<body>
+    <script>
+        let userInput = parseInt(prompt('Enter a positive number:'));
+
+        for (; userInput !== 1;) {
+
+            console.log(userInput);
+
+            if (userInput % 2 === 0) {
+                userInput = userInput / 2;
+            }
+
+            else {
+                userInput = (userInput * 3) + 1;
+            }
+
+        }
+
+        console.log(userInput);
+
+    </script>
+</body>
+
+</html>
