@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Sequence</title>
+</head>
+<body>
+    <script>
+        let userInput = parseInt(prompt('Enter the number of terms u want for the sequence:'));
+
+        if(userInput >= 1) console.log(1);
+        if(userInput >= 2) console.log(1);
+        a = 1, b = 1;
+        for(i = 3 ; i <= userInput; i++){
+            let nextTerm = a + b;
+            console.log(nextTerm);
+
+            a = b;
+            b = nextTerm;
+        }
+    </script>
+</body>
+</html>
