@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Exercises</title>
+</head>
+
+<body>
+    <script>
+        // Function 1 //
+
+        function HelloWorld() {
+            for (i = 0; i < 10; i++) {
+                console.log('Hello World!');
+            }
+        }
+
+        HelloWorld();
+
+        // Function 2 //
+
+        function userInput() {
+            let text = prompt('Type anything');
+            console.log(text);
+        }
+
+        userInput();
+
+        // Function 3 //
+
+        function km() {
+            let userInput = parseInt(prompt('Enter a number in km we will contvert it in miles:'));
+            let miles = 0.621371;
+            let convert = userInput * miles;
+            console.log(convert + ' ' + 'miles');
+        }
+
+        km();
+
+        // Function 4 //
+
+        function RadiusArea() {
+            let userInput = parseInt(prompt('Enter the radius of a circle we will give u the area:'));
+            const pi = Math.PI
+            let area = pi * Math.pow(userInput, 2);
+            console.log('The area is ' + area);
+        }
+
+        RadiusArea();
+
+        // Function 5 //
+
+        function fullName() {
+            let name = prompt('Enter your name:');
+            let surname = prompt('Enter your surname:')
+            console.log(`Welcome, ${name} ${surname}`);
+        }
+        fullName()
+
+        // Function 6 //
+
+        function isWorkingCitizen() {
+            let age = parseInt(prompt('Enter your age:'));
+            if (age > 18 & age < 65) {
+                console.log('True');
+            }
+            else {
+                console.log('False');
+            }
+        }
+
+        isWorkingCitizen();
+
+        // Function 7 //
+
+        function isEven() {
+            let userInput = parseInt(prompt('Enter a positive integer:'));
+            if (userInput % 2 === 0) {
+                console.log('Your number is even')
+            }
+            else {
+                console.log('Your number is odd')
+            }
+        };
+
+        isEven();
+    </script>
+</body>
+
+</html>
